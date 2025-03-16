@@ -114,6 +114,10 @@ article {
     transition: background 0.3s;
 }
 
+article img {
+    max-width: 70%;
+}
+
 body.dark-mode article {
     background: #444;
 }
