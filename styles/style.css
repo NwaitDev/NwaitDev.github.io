@@ -45,6 +45,7 @@ nav {
     background: #9015a0;
     padding: 10px 0;
 }
+
 nav ul {
     list-style: none;
     padding: 0;
@@ -55,14 +56,20 @@ nav ul {
 nav ul li {
     margin: 0 15px;
 }
+
 nav ul li a {
     text-decoration: none;
     color: white;
     font-weight: bold;
 }
-section {
-    padding: 50px 20px;
-    margin-top: 60px;
+
+nav ul li ul li{
+    visibility: hidden;
+    height: 0px;
+}
+
+nav ul li:hover ul li{
+    visibility: visible;
 }
 
 p {
@@ -98,7 +105,7 @@ body.dark-mode .dark-mode-toggle {
     margin-bottom: 20px;
 }
 
-section {
+section:not(:first-child) {
     padding: 50px 20px;
     margin-top: 60px;
 }
@@ -112,6 +119,10 @@ article {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     transition: background 0.3s;
+}
+
+main p {
+    text-align: left;
 }
 
 article img {
@@ -129,4 +140,16 @@ a {
 .social-links a {
     margin: 0 10px;
     text-decoration: none;
+}
+
+.collapsible {
+  cursor: pointer;
+  outline: none;
+}
+
+.content {
+    text-align: left;
+    list-style-type:none;
+    display: none;
+    overflow: hidden;
 }

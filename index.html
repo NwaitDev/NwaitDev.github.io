@@ -11,39 +11,112 @@
         <nav>
             <ul>
                 <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#publications">Publications</a></li>
+                <li>
+                    <a href="#projects">Projects</a>
+                </li>
+                <li>
+                    <a href="#publications">Publications</a>
+                </li>
+                <li>
+                    <a href="#junk">Junk</a>
+                </li>
             </ul>
             <button type="button" class="dark-mode-toggle" onclick="toggleDarkMode()">Dark/Light Mode</button>
         </nav>
-        <header>
+        <header id="about">
             <h1>Anna Gallone</h1>
-            <img src="images/profile.png" alt="My Profile Picture" class="profile-img">
-            <h2>PhD student in complex systems modelisation</h2>
+            <img src="images/profile.jpg" alt="My Profile Picture (tell me I'm pretty pwease)" class="profile-img">
+            <h2>PhD student in Computer Sciences:<br>Distributed Cyber-Physical Systems Modeling</h2>
         </header>
         <main>
-            <section id="about">
+            <section>
                 <h3>About Me</h3>
-                <p>Eternally curious, alt-indie-rock, board and card games, theater and animation movies enjoyer. This is me !</p>
+                <p>I am an eternally curious, alt-indie-rock, board and card games, theater and animation movies enjoyer.</p>
+                <p>Ask me about something I like and I can talk for hours, literally. My main research subjects are around modeling of computer systems involving interactions with elements of the environment, but honestly, I'm into anything that requires a bit of abstraction and a lot of reflexion: algorithms, language theory, signal processing, applied math, computer architectures...</p>
                 <p>Teaching <i>computer science</i> at <a href="https://www.univ-fcomte.fr/">Université Marie &amp; Louis Pasteur</a>, Franche-Comté.</p>
-                <p>Doing research at <a href="https://www.femto-st.fr/fr">Femto-ST Institute</a>, my subjects of interest are about automata-based modelisation, component based systems, control theory applied to computer sience and distributed systems.</p>
+                <p>Doing research at <a href="https://www.femto-st.fr/fr">Femto-ST Institute</a> on automata-based models, component based systems, control theory applied to computer sience and distributed systems.</p>
             </section>
             <section id="projects">
                 <h3>Projects</h3>
                 <article>
                     <h4>Control of Hierarchical Interconnected Programmable Systems</h4>
                     <img src="images/CHIPS.png" alt="Chips language logo (two overlapping crisps)">
-                    <p>Currently developing a model description language called <b>Chips</b></p>
+                    <p><b>Chips</b> is a high-level semi-synchonous programing language for the description of distributed softwares on heterogeneous platforms taking into account environment turbulence to achieve real-time adaptation and continuity of services.
+                    </p>
+                    <p>Alright. That was a pretty long and complex sentence. Now, let us forget about the scientific jibberish: Its mainly called Chips because I wanted a funny name. It is a quite specific language, you may not want to learn programming with it. It is mostly a toy language for me to experiment my research concepts. However, with the help of some interested engineers, it could really become a powerful tool for the design of critical systems and quick deployment of self updating applications (if my research is of any use). Check my <a href="https://github.com/NwaitDev">GitHub</a> if you're interested!</p>
                 </article>
                 <article>
                     <h4>Personne ne les pleurera</h4>
-                    <p>Directing a french theater play that I wrote</p>
-                    <p>This play exists thank to the <a href="https://www.theatre-universitaire-fc.fr/">Théâtre Universitaire de Franche-Comté</a></p>
+                    <p>Directing a french theater play that I wrote. Maybe, eventually, someday, if stars align, we'll go on a tour with my comedians to show that play to the world!</p>
+                    <p>This play exists thank to <a href="https://www.theatre-universitaire-fc.fr/">Théâtre Universitaire de Franche-Comté</a>.</p>
+                </article>
+                <article>
+                    <h4>MetaMeta</h4>
+                    <p>Development of a narrative video game on my own. It's about generating a story by tuning some parameters and choosing random words in dictionaries to make sentences. Almost like a Large Language Model, but without the whole machine learning/neural network thing.</p>
+                    <p>Yes. I know. It looks more like a research project than a video game...</p>
+                    <p>Do not ask me about the current state of this project, I am very slow.</p>
                 </article>
             </section>
             <section id="publications">
                 <h3>Publications</h3>
-                <p>No publications yet</p>
+                <article>
+                    <h4>
+                        <a href="https://hal.science/hal-05106227v1/document#page=56" target="_blank">Langage Chips : Modélisation et contrôle de systèmes distribués à base de composants</a>
+                    </h4>
+                    <p>Article in french published in: Actes des journées Approches Formelles dans l’Assistance au Développement du Logiciel (AFADL), Jun 2025, Pau, France.</p>
+                    <!-- <p>
+                        Ce document présente Chips, un langage de programmation dédié à la modélisation de systèmes à base de composants. Son objectif est de permettre la modélisation d’architectures logicielles auxquels une forme de contrôle en temps réel serait appliquée. Pour cela, Chips intègre des constructions syntaxiques facilitant l’expression des formalismes mathématiques issus de la théorie du contrôle. son niveau d’abstraction permet également l’introduction des concepts de programmation agrégée telle la généralisation de l’opération de broadcast ou d’accumulation pour être appliqué à des systèmes logiciels distribués. En compilant Chips vers d’autres langages comme BIP, il sera possible de vérifier par preuve ou model-checking des propriétés de résilience des systèmes conçus sur des automates équivalents aux programmes initiaux.
+                    </p> -->
+                    <p>
+                        This document presents Chips, a modeling language dedicated to the description of component based systems. Its goal is to allow the modeling of software architectures on which control theory is applied. By also making use of concepts from the aggregate programming paradigm, control theory formalism can be extended to crowds of components. The compilation of Chips to other languages such as BIP will permit to apply proofs or model checking over designed applications to ensure the resilience of so-mentionned applications when implemented on real devices.
+                    </p>
+                </article>
+            </section>
+
+            <section id="junk">
+                <h3>JUNK</h3>
+                <p>This is where I put whatever I want. Because this is my PERSONAL website, and because I can. So have fun reading about all the sh*t I'm able to share!</p>
+                <article>
+                    <h4 class="collapsible">My favorite things : (not so) definitive edition</h4>
+                    <p>Since I always forget what is my favorite everything, I made a small list.</p>
+                    <ul class="content">
+                        <li><b>Word:</b> Abrasive</li>
+                        <li><b>Aquatic mammal:</b> Humpback whale</li>
+                        <li><b>Terrestrial mammal:</b> Hoffmann's two-toed sloth</li>
+                        <li><b>Flying mammal:</b> Nathusius's pipistrelle</li>
+                        <li><b>Video game:</b> Transistor</li>
+                        <li><b>Music Group:</b> GRL Wood</li>
+                        <li><b>Puppet:</b> Sun sun</li>
+                        <li><b>Season:</b> Autumn</li>
+                        <li><b>Tree:</b> The one behind the building where I lived during the Covid pandemic</li>
+                        <li><b>Theater Play:</b> The Prince</li>
+                        <li><b>Bird:</b> Peacock</li>
+                        <li><b>Board game:</b> War Chest</li>
+                        <li><b>Letter:</b> A</li>
+                        <li><b>Color:</b> Purple</li>
+                        <li><b>War:</b> NONE. F*CK INSTRUMENTALISED MURDER.</li>
+                        <li><b>Painting:</b> Dream Caused by the Flight of a Bee Around a Pomegranate a Second Before Awakening</li>
+                        <li><b>Dragon:</b> Amareth, the Lustruous</li>
+                        <li><b>Poker hand:</b> Four of a kind</li>
+                        <li><b>Number:</b> SEVEN</li>
+                        <li><b>Novel:</b> The Threads of the Heart</li>
+                        <li><b>Music genre:</b> indie Rock</li>
+                        <li><b>Programming language:</b> C</li>
+                        <li><b>Cloth:</b> Skirt</li>
+                        <li><b>Brand:</b> NONE. F*CK CAPITALISM.</li>
+                        <li><b>Temperature:</b> 21°c</li>
+                        <li><b>Measurement System:</b> metric</li>
+                        <li><b>Drink:</b> Mudslide (a cocktail from a pub that no longer exists)</li>
+                        <li><b>Magic the Gathering Combo:</b> Lotus Field + Pore Over the Pages</li>
+                        <li><b>Kind words:</b> "I'm glad you're in my life."</li>
+                        <li><b>Technology:</b> Language</li>
+                        <li><b>Pokemon type:</b> Faerie</li>
+                        <li><b>Drawing Technique:</b> pinball pen</li>
+                        <li><b>Party activity:</b> Karaoke</li>
+                        <li><b>Concept:</b> Friendship</li>
+                        <li><b>Sorting algorithm:</b> sleep sort</li>
+                    </ul>
+                </article>
             </section>
         </main>
         <footer>
@@ -52,7 +125,7 @@
                 <a rel="me" href="https://mastodon.social/@ohnoanna">Mastodon</a>
                 <a href="https://deckstats.net/decks/193240/?lng=fr">Deckstats</a>
             </div>
-            <p>&copy; 2025 Anna Gallone. All rights reserved.</p>
+            <p>&copy; 2025 Anna Gallone. All rights reserved. I guess?</p>
         </footer>
         <script src="scripts/stuff.js"></script>
     </body>
